@@ -1,12 +1,7 @@
 import sys
 import webbrowser
 
-required_version = (3, 12)
 
-if sys.version_info[:2] != required_version:
-    print("ib admin vlinh")
-    webbrowser.open("https://t.me/vietnam115")
-    sys.exit(1)
 
 den = "\033[1;90m"
 luc = "\033[1;32m"
