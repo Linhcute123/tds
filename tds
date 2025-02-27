@@ -1,7 +1,12 @@
 import sys
 import webbrowser
 
+required_version = (3, 12)
 
+if sys.version_info[:2] != required_version:
+    print("Yeu cau python 3.1212")
+    webbrowser.open("https://t.me/vietnam115")
+    sys.exit(1)
 
 den = "\033[1;90m"
 luc = "\033[1;32m"
@@ -176,7 +181,6 @@ def main():
 		data = tds.main()
 		try:
 			xu = data['xu']
-			xudie = data['xudie']
 			user = data['user']
 			print(lam+' Đăng Nhập Thành Công ')
 			break
@@ -222,8 +226,8 @@ def main():
 			if nv_nhan < 8:
 				print(red+'Trên 8 Nhiệm Vụ Mới Được Nhận Tiền!')
 				continue
-			if nv_nhan > 15:
-				print(red+'Nhận Xu Dưới 15 Nhiệm Vụ Để Tránh Lỗi')
+			if nv_nhan > 20:
+				print(red+'Nhận Xu Dưới 20 Nhiệm Vụ Để Tránh Lỗi')
 				continue
 			user_cau_hinh=input(f'{thanh_xau}{trang}Nhập User Name Tik Tok Cần Cấu Hình: {vang}')
 			cau_hinh=tds.run(user_cau_hinh)
