@@ -208,7 +208,7 @@ def main():
 	banner()
 	print(f'{thanh_xau}{trang}Tên Tài Khoản: {vang}{user} ')
 	print(f'{thanh_xau}{trang}Xu Hiện Tại: {vang}{xu}')
-	print(f'{thanh_xau}{trang}Xu Bị Phạt: {vang}{xudie} ')
+	
 	while True:
 		namtool=0
 		bonam(14)
